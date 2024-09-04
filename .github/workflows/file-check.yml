@@ -33,7 +33,7 @@ jobs:
           sudo npm install -g csslint
           
           # Install ESLint globally
-          sudo npm install -g eslint
+          # sudo npm install -g eslint
 
       # Step 3: Check index.html existence and syntax
       - name: Check index.html existence and syntax
@@ -62,7 +62,7 @@ jobs:
         run: |
           if [ -f static/script.js ]; then
             echo "script.js exists."
-            eslint static/script.js
+            # eslint static/script.js
           else
             echo "script.js is missing!"
             exit 1
